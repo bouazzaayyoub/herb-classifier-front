@@ -7,12 +7,12 @@ export const siteMetadata = {
   metaRobots: 'index, follow',
   language: 'en-US',
   theme: 'system',
-  siteUrl: `https://bouazza.engineer`,
+  siteUrl: `https://herb-classifier.vercel.app`,
 
   // Open Graph tags
-  ogImage: ``,
+  ogImage: `https://herb-classifier.vercel.app/og-image.png`,
 
   // Twitter tags
-  twImage: ``,
+  twImage: `https://herb-classifier.vercel.app/og-image.png`,
   locale: 'en-US',
 };

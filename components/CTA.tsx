@@ -12,7 +12,7 @@ const CTA = () => (
           Our source code is available on GitHub.
         </p>
         <a
-          href="https://github.com/bouazzaayyoub"
+          href="https://github.com/bouazzaayyoub/herb-classifier-front"
           className="mt-4 inline-flex justify-center items-center gap-2 font-medium text-sm text-white bg-gray-800 hover:bg-gray-600 active:bg-gray-900 max-w-[200px] py-2.5 px-4 text-center rounded-lg duration-150"
         >
           <svg
