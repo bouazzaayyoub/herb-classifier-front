@@ -1,7 +1,7 @@
 export const siteMetadata = {
   siteName: `Herb-Classifier`,
-  title: ``,
-  description: ``,
+  title: `Herb-Classifier`,
+  description: `Instantly Identify and Classify Plants with Our Herbal Classifier"`,
   keywords: '',
   author: 'Bouazza Ayyoub',
   metaRobots: 'index, follow',
