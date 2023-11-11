@@ -37,7 +37,7 @@ const Navbar = () => {
   };
 
   return (
-    <header>
+    <header className="">
       <nav
         className={`bg-white w-full md:static md:text-sm ${
           state ? 'fixed z-10 h-full' : ''

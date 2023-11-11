@@ -1,6 +1,4 @@
-export interface HerbClassifierRequest {
-  image: string;
-}
+export interface HerbClassifierRequest {}
 
 export interface HerbClassifierResponse {
   HerbType: string;

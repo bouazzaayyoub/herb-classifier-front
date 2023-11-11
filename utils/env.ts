@@ -1,4 +1,7 @@
-export enum ENV_KEY {}
+export enum ENV_KEY {
+  // eslint-disable-next-line no-unused-vars
+  BACKEND_URL = 'BACKEND_URL',
+}
 
 /**
  * Retrieves the value of the specified environment variable.
@@ -9,7 +12,7 @@ export enum ENV_KEY {}
  */
 export const getEnv = (key: ENV_KEY): string | null => {
   switch (key) {
-    default:
-      return null;
+    case ENV_KEY.BACKEND_URL:
+      return process.env[key] ?? null;
   }
 };

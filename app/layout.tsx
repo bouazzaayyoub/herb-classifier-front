@@ -1,10 +1,12 @@
-import Navbar from '@/components/Navbar';
-import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import Footer from '@/components/Footer';
 import { Analytics } from '@vercel/analytics/react';
+import { Inter } from 'next/font/google';
+
+import Navbar from '@/components/Navbar';
 import { siteMetadata } from '@/data/siteMetadata';
+import Footer from '@/components/Footer';
+
+import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -26,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    images: [siteMetadata.ogImage],
+    images: [siteMetadata.twImage],
     title: siteMetadata.title,
     description: siteMetadata.description,
   },

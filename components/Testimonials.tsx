@@ -50,9 +50,16 @@ const Testimonials = () => {
   ];
 
   return (
-    <SectionWrapper className="pb-0">
-      <div id="testimonials" className="max-w-screen-xl mx-auto px-4 md:px-8">
-        <div className="max-w-2xl sm:text-center md:mx-auto">
+    <SectionWrapper>
+      <div className="max-w-screen-xl mx-auto px-4 md:px-8 relative">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 top-60 grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-30"
+        >
+          <div className="h-60 bg-gradient-to-br from-green-600 to-green-400 blur-[106px] " />
+          <div className="h-40 bg-gradient-to-r from-green-400 to-green-300 blur-[106px] " />
+        </div>
+        <div className="relative max-w-2xl sm:text-center md:mx-auto">
           <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
             See what others saying about us
           </h2>
@@ -60,10 +67,13 @@ const Testimonials = () => {
             Listen to what our users are saying about us.
           </p>
         </div>
-        <div className="mt-12">
+        <div className="mt-12 relative">
           <ul className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {testimonials.map((item, idx) => (
-              <li key={idx} className="bg-white border p-4 rounded-xl">
+              <li
+                key={idx}
+                className="bg-white  p-6 rounded-2xl shadow-2xl shadow-gray-600/10 shadow-lg"
+              >
                 <figure>
                   <div className="flex items-center gap-x-4">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
