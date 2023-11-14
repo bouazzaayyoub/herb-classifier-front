@@ -1,17 +1,13 @@
 'use client';
 
 import Image from 'next/image';
-import NavLink from './NavLink';
-import { siteMetadata } from '@/data/siteMetadata';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
     <section className="">
-      <div className="custom-screen pt-20 text-gray-600 relative">
-        {/* bg  */}
-
-        {/* end bg */}
-        <div className="relative space-y-5 max-w-4xl mx-auto ">
+      <div className=" pt-20 text-gray-600 relative">
+        <div className="relative space-y-8 max-w-4xl mx-auto ">
           <h1 className="text-4xl text-center text-gray-800 font-extrabold mx-auto sm:text-6xl">
             Classify Your herbs
             <br /> with{' '}
@@ -45,23 +41,39 @@ export default function Hero() {
             completely for free
           </p>
           <div className="flex items-center justify-center gap-x-6 font-medium text-sm">
-            <NavLink
+            <Link
               href="/start"
-              className="text-white bg-green-600 hover:bg-green-500 active:bg-green-700 "
+              className="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-green-600 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
             >
-              Identify My Herb
-            </NavLink>
-            <NavLink
-              target="_blank"
-              href={siteMetadata.githubUrl}
-              className="text-gray-700 border hover:bg-gray-50"
-              scroll={false}
+              <span className="relative text-base font-semibold text-white">
+                Identify My Herb{' '}
+              </span>
+            </Link>
+            <Link
+              href="/about"
+              className="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:border before:inset-0 before:rounded-full before:bg-gray-50 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95  sm:w-max"
             >
-              Learn more
-            </NavLink>
+              <span className="relative text-base font-semibold text-primary dark:text-white">
+                Learn more
+              </span>
+            </Link>
           </div>
 
-          <div className="flex justify-center pt-10">
+          <div className="relative flex justify-center pt-10">
+            <Image
+              alt="image"
+              src="/1.png"
+              className="absolute rounded-xl left-36 shadow-xl top-40 hover:scale-125  transition"
+              width={150}
+              height={150}
+            />
+            <Image
+              alt="image"
+              src="/2.png"
+              className="absolute rounded-xl right-32 shadow-xl top-80 hover:scale-125   transition"
+              width={100}
+              height={100}
+            />
             <Image
               alt="image"
               src="/hero.jpeg"

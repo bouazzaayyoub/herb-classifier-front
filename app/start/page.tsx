@@ -6,11 +6,13 @@ import React, { ChangeEvent, useEffect, useState } from 'react';
 
 const ClassifyHerb = () => {
   const [image, setImage] = useState<string | null>(null);
+  const [isLoading, setisLoading] = useState<boolean>(false);
   const [resultText, setResultText] = useState('');
 
   const handleChange = async (event: ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files![0];
     setImage(URL.createObjectURL(file));
+    setisLoading(true);
 
     // Create a FormData instance to package the file for upload
     const formData = new FormData();
@@ -23,6 +25,7 @@ const ClassifyHerb = () => {
         method: 'POST',
         body: formData,
       });
+      setisLoading(false);
 
       if (response.ok) {
         const responseText = await response.text();
@@ -54,7 +57,11 @@ const ClassifyHerb = () => {
       <div className="max-w-6xl w-full flex gap-6 mt-10">
         <div className="mx-auto">
           {image ? (
-            <ImagePreview src={image} setImage={setImage} />
+            <ImagePreview
+              src={image}
+              setImage={setImage}
+              isLoading={isLoading}
+            />
           ) : (
             <FileInput id="image" name="herb" onChange={handleChange} />
           )}

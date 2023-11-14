@@ -76,13 +76,12 @@ const Testimonials = () => {
               >
                 <figure>
                   <div className="flex items-center gap-x-4">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={item.avatar}
                       className="w-14 h-14 object-cover rounded-full"
                       alt={item.name}
                     />
-                    <div>
+                    <div className="">
                       <span className="block text-gray-800 font-semibold">
                         {item.name}
                       </span>

@@ -13,10 +13,7 @@ const Navbar = () => {
   const navigation: Array<{
     title: string;
     path: string;
-  }> = [
-    // { title: 'Testimonials', path: '#testimonials' },
-    // { title: 'Homepage', path: '/' },
-  ];
+  }> = [{ title: 'About us', path: '/about' }];
 
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -96,18 +93,18 @@ const Navbar = () => {
             <ul className="text-gray-700 justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0 md:text-gray-600 md:font-medium">
               {navigation.map((item, idx) => {
                 return (
-                  <li key={idx} className="duration-150 hover:text-gray-900">
-                    <Link href={item.path} className="block">
-                      {item.title}
+                  <li key={idx}>
+                    <Link
+                      href={item.path}
+                      className="border-r border-gray-300 pr-5 space-x-2 hover:text-green-500 transition hidden sm:flex"
+                    >
+                      <p className="font-medium text-base">{item.title}</p>
                     </Link>
                   </li>
                 );
               })}
               <li>
-                <NavLink
-                  href="/start"
-                  className="block font-medium text-sm text-white bg-green-600 hover:bg-green-500 active:bg-green-700 md:inline"
-                >
+                <NavLink href="/start" className="font-medium">
                   Identify My Herb{' '}
                 </NavLink>
               </li>
