@@ -25,7 +25,6 @@ const ClassifyHerb = () => {
         method: 'POST',
         body: formData,
       });
-      setisLoading(false);
 
       if (response.ok) {
         const responseText = await response.text();
@@ -36,6 +35,7 @@ const ClassifyHerb = () => {
     } catch (error) {
       alert('An error occurred. Please try again later.');
     } finally {
+      setisLoading(false);
     }
   };
 
