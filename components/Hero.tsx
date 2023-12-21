@@ -6,8 +6,8 @@ import Link from 'next/link';
 export default function Hero() {
   return (
     <section className="">
-      <div className=" pt-20 text-gray-600 relative">
-        <div className="relative space-y-8 max-w-4xl mx-auto ">
+      <div className="pt-20 text-gray-600 relative">
+        <div className="relative space-y-8 max-w-4xl mx-5 md:mx-auto">
           <h1 className="text-4xl text-center text-gray-800 font-extrabold mx-auto sm:text-6xl">
             Classify Your herbs
             <br /> with{' '}
@@ -45,7 +45,7 @@ export default function Hero() {
               href="/start"
               className="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-green-600 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
             >
-              <span className="relative text-base font-semibold text-white">
+              <span className="relative text-sm md:text-base font-semibold text-white">
                 Identify My Herb{' '}
               </span>
             </Link>
@@ -53,7 +53,7 @@ export default function Hero() {
               href="/about"
               className="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:border before:inset-0 before:rounded-full before:bg-gray-50 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95  sm:w-max"
             >
-              <span className="relative text-base font-semibold text-primary dark:text-white">
+              <span className="relative text-sm md:text-basefont-semibold text-primary dark:text-white">
                 Learn more
               </span>
             </Link>
@@ -63,14 +63,14 @@ export default function Hero() {
             <Image
               alt="image"
               src="/1.png"
-              className="absolute rounded-xl left-36 shadow-xl top-40 hover:scale-125  transition"
+              className="hidden md:block absolute rounded-xl left-36 shadow-xl top-40 hover:scale-125  transition"
               width={150}
               height={150}
             />
             <Image
               alt="image"
               src="/2.png"
-              className="absolute rounded-xl right-32 shadow-xl top-80 hover:scale-125   transition"
+              className="hidden md:block absolute rounded-xl right-32 shadow-xl top-80 hover:scale-125   transition"
               width={100}
               height={100}
             />

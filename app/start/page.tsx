@@ -47,7 +47,7 @@ const ClassifyHerb = () => {
 
   return (
     <div className="flex justify-center items-center flex-col w-full lg:p-0 p-4 sm:mb-28 mb-0">
-      <h1 className="text-6xl font-bold">Classify your herb</h1>
+      <h1 className="text-4xl md:text-6xl font-bold">Classify your herb</h1>
       {resultText && (
         <span className="text-2xl mt-10 ">
           it is a{' '}
