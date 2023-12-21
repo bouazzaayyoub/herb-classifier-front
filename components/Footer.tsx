@@ -1,9 +1,9 @@
 import Image from 'next/image';
 
 const Footer = () => (
-  <footer>
-    <div className="custom-screen pt-16">
-      <div className="mt-10 py-10 border-t">
+  <footer className="flex custom-screen pt-16 justify-between">
+    <div className="">
+      <div className="py-10 ">
         <p className="text-gray-600">
           Created by{' '}
           <a
@@ -40,6 +40,18 @@ const Footer = () => (
           />
         </div>
       </div>
+    </div>
+    <div className="flex items-center">
+      <Image
+        src="/palestine.png"
+        className="shadow-lg rounded-full"
+        alt=""
+        height={40}
+        width={40}
+      />
+      <span className="ms-2 font-medium text-base capitalize text-gray-700">
+        #FreePalestine
+      </span>
     </div>
   </footer>
 );

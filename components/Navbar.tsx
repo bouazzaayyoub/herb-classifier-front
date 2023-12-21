@@ -6,9 +6,12 @@ import NavLink from './NavLink';
 import Image from 'next/image';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { siteMetadata } from '@/data/siteMetadata';
+import useBoop from '@/helpers/hooks/useBoop';
+import { animated } from 'react-spring';
 
 const Navbar = () => {
   const [state, setState] = useState(false);
+  const { appliedStyle, trigger } = useBoop({ scale: 1.2 });
 
   const navigation: Array<{
     title: string;
@@ -34,13 +37,27 @@ const Navbar = () => {
   };
 
   return (
-    <header className="">
+    <header>
+      <div className="flex items-center px-10 py-2 bg-green-200">
+        <animated.div onMouseEnter={() => trigger()} style={appliedStyle}>
+          <Image
+            src="/palestine.png"
+            className="shadow-lg rounded-full"
+            alt=""
+            height={20}
+            width={20}
+          />
+        </animated.div>
+        <span className="ms-2 font-medium text-sm capitalize text-gray-700">
+          We stand with Palestine{' '}
+        </span>
+      </div>
       <nav
         className={`bg-white w-full md:static md:text-sm ${
           state ? 'fixed z-10 h-full' : ''
         }`}
       >
-        <div className="custom-screen items-center mx-auto md:flex">
+        <div className="custom-screen justify-between items-center mx-auto md:flex">
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link href="/" className="flex items-center gap-3">
               <Image src="/logo.png" alt="logo" width={50} height={50} />
@@ -85,8 +102,9 @@ const Navbar = () => {
               </button>
             </div>
           </div>
+
           <div
-            className={`flex-1 pb-3 mt-8 md:pb-0 md:mt-0 md:block ${
+            className={`pb-3 mt-8 md:pb-0 md:mt-0 md:block ${
               state ? '' : 'hidden'
             }`}
           >
@@ -103,6 +121,7 @@ const Navbar = () => {
                   </li>
                 );
               })}
+
               <li>
                 <NavLink href="/start" className="font-medium">
                   Identify My Herb{' '}
