@@ -13,10 +13,11 @@ export async function POST(request: NextRequest) {
       method: 'post',
       body: reqBody,
     });
-
-    return new Response(await response.text(), { status: 200 });
+    if (response.ok) {
+      return new Response(await response.text(), { status: 200 });
+    }
   } catch (error) {
     console.error('Error uploading image:', error);
-    return new Response('error occurred', { status: 400 });
+    return new Response('error occurred', { status: 500 });
   }
 }
