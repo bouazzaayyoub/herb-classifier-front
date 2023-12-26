@@ -18,11 +18,21 @@ export default function AboutUs({}: Props) {
             <h1 className="text-gray-900 font-bold text-5xl md:text-6xl xl:text-7xl">
               About <span className="text-green-500 dark:text-white">Us.</span>
             </h1>
-            <p className="mt-8 text-gray-700 dark:text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-              incidunt nam itaque sed eius modi error totam sit illum. Voluptas
-              doloribus asperiores quaerat aperiam. Quidem harum omnis beatae
-              ipsum soluta!
+            <p className="mt-8 text-gray-700 dark:text-gray-300 text-justify">
+              Welcome to Herbify, a web application developed to help differentiate between two commonly confused herbs in Morocco - coriander and parsley, known locally as qazbor and maadanous.
+              This app was created by a team of passionate developers and plant enthusiasts looking to solve a widespread challenge faced by many Moroccans while grocery shopping.
+            </p>
+            <p className="mt-8 text-gray-700 dark:text-gray-300 text-justify">
+              The inspiration behind Herbify came from our own difficulties distinguishing between qazbor and maadanous. We realized there was a need for a simple tool to help identify these herbs accurately,
+              ensuring people buy the right ingredient for their recipes.
+            </p>
+            <p className="mt-8 text-gray-700 dark:text-gray-300 text-justify">
+              To build Herbify, we leveraged a convolutional neural network created with DeepLearning4J. This AI model was trained on hundreds of images of coriander and parsley to recognize the subtle visual differences between the two.
+              Now, our app can receive user-uploaded images of either herb and identify it correctly.
+            </p>
+            <p className="mt-8 text-gray-700 dark:text-gray-300 text-justify">
+              We're proud to offer this AI-powered application as a handy reference source for anyone unsure between qazbor and maadanous. Herbify takes the guesswork out of herb shopping and gives you confidence you're choosing the right ingredient every time.
+              Our goal is to continue improving Herbify by expanding the herb catalogue and increasing the accuracy of the identification technology. We are also working to provide a mobile solution in the future, making herb identification accessible anywhere.
             </p>
             <div className="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
               <a
@@ -45,21 +55,21 @@ export default function AboutUs({}: Props) {
             <div className="hidden py-8 mt-16 border-y border-gray-100 dark:border-gray-800 sm:flex justify-between">
               <div className="text-left">
                 <h6 className="text-lg font-semibold text-gray-700 dark:text-white">
-                  The lowest price
+                  Solving a Widespread Challenge
                 </h6>
-                <p className="mt-2 text-gray-500">Some text here</p>
+                <p className="mt-2 text-gray-500"></p>
               </div>
               <div className="text-left">
                 <h6 className="text-lg font-semibold text-gray-700 dark:text-white">
-                  The fastest on the market
+                  Powered by AI Technology
                 </h6>
-                <p className="mt-2 text-gray-500">Some text here</p>
+                <p className="mt-2 text-gray-500"></p>
               </div>
               <div className="text-left">
                 <h6 className="text-lg font-semibold text-gray-700 dark:text-white">
-                  The most loved
+                  Your Pocket Herb Assistant
                 </h6>
-                <p className="mt-2 text-gray-500">Some text here</p>
+                <p className="mt-2 text-gray-500"></p>
               </div>
             </div>
           </div>
