@@ -15,5 +15,5 @@ export const siteMetadata = {
   // Twitter tags
   twImage: `https://herb-classifier.vercel.app/og-image.png`,
   locale: 'en-US',
-  githubUrl: 'https://github.com/bouazzaayyoub/herb-classifier-front',
+  githubUrl: 'https://github.com/bouazzaayyoub/herb-classifier-api',
 };
