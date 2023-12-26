@@ -1,6 +1,6 @@
 export const siteMetadata = {
-  siteName: `Herb-Classifier`,
-  title: `Herb-Classifier`,
+  siteName: `Herbify`,
+  title: `Herbify`,
   description: `Instantly Identify and Classify Plants with Our Herbal Classifier"`,
   keywords: '',
   author: 'Bouazza Ayyoub',
@@ -15,5 +15,5 @@ export const siteMetadata = {
   // Twitter tags
   twImage: `https://herb-classifier.vercel.app/og-image.png`,
   locale: 'en-US',
-  githubUrl: 'https://github.com/bouazzaayyoub/herb-classifier-front',
+  githubUrl: 'https://github.com/miliariadnane/herb-classifier-api',
 };
