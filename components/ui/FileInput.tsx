@@ -38,6 +38,7 @@ function FileInput({ name, id, onChange, ...props }: InputProps) {
         className="hidden"
         name={name}
         onChange={onChange}
+        accept="image/*"
         {...props}
       />
     </label>

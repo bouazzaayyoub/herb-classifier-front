@@ -1,6 +1,7 @@
 'use client';
 
 import ImagePreview from '@/components/ImagePreview';
+import Arrow from '@/components/elements/Arrow';
 import FileInput from '@/components/ui/FileInput';
 import React, { ChangeEvent, useEffect, useState } from 'react';
 
@@ -46,14 +47,22 @@ const ClassifyHerb = () => {
   }, [image]);
 
   return (
-    <div className="flex justify-center items-center flex-col w-full lg:p-0 p-4 sm:mb-28 mb-0">
+    <div className="flex justify-center items-center flex-col w-full lg:p-0 p-4 sm:mb-28 mb-0 mt-6">
       <h1 className="text-4xl md:text-6xl font-bold">Classify your herb</h1>
-      {resultText && (
-        <span className="text-2xl mt-10 ">
-          it is a{' '}
-          <strong className="font-semibold text-green-500">{resultText}</strong>
-        </span>
-      )}
+      <div className="relative mt-10 z-10">
+        <div className="absolute right-8 top-10 -rotate-45">
+          <Arrow />
+        </div>
+        {resultText && (
+          <span className="text-2xl ">
+            it is a{' '}
+            <strong className="font-semibold text-green-500">
+              {resultText}
+            </strong>
+          </span>
+        )}
+      </div>
+
       <div className="max-w-6xl w-full flex gap-6 mt-10">
         <div className="mx-auto">
           {image ? (
