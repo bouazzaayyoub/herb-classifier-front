@@ -1,12 +1,11 @@
 const Testimonials = () => {
   const testimonials = [
     {
-      avatar:
-        'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-      name: 'Alex wonderson',
-      title: 'Founder of Lyconf',
+      avatar: '/ayyoub.png',
+      name: 'Bouazza Ayyoub',
+      title: 'Software Engineer',
       quote:
-        'As a small business owner, I was doing everything and my workload was increasing. With this startup, I was able to save time so I could focus on the things that matter most: my clients and my family.',
+        "Okay, Herbify saved me and my kitchen from herb identity crises! 🌿 It's like having a GPS for coriander and parsley in Moroccan dishes – no more getting lost in the herb jungle!",
     },
     {
       avatar:
@@ -24,29 +23,6 @@ const Testimonials = () => {
       quote:
         'My business was in a dire situation. I had no idea what to do, and I felt like I was losing hope. Then I found this Startup and everything changed. It helped me create automated sales.',
     },
-    {
-      avatar: 'https://randomuser.me/api/portraits/women/79.jpg',
-      name: 'Angela stian',
-      title: 'Product designer',
-      quote:
-        'One day, my company was about to go under and I had no idea what to do. I found Blinder and it helped me get my business back on track.Now, my company is flourishing and I see new opportunities.',
-    },
-    {
-      avatar:
-        'https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80',
-      name: 'Jurica koletic',
-      title: 'Founder of Let’s code',
-      quote:
-        'In these difficult economic times, doing business is tough. Funding is hard to come by and many entrepreneurs are struggling to keep their doors open. but when I found this startup everything changed.',
-    },
-    {
-      avatar:
-        'https://images.unsplash.com/photo-1590038767624-dac5740a997b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-      name: 'Kavi laron',
-      title: 'Full stack engineer',
-      quote:
-        'We all know how costly it is to find good help. I was faced with this problem when I lost my data entry staff and my business was on the brink of going under. Thankfully, Blinder saved the day.',
-    },
   ];
 
   return (
@@ -54,10 +30,10 @@ const Testimonials = () => {
       <div className="max-w-screen-xl mx-auto px-4 md:px-8 relative">
         <div
           aria-hidden="true"
-          className="absolute inset-0 top-60 grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-30"
+          className="absolute inset-0 top-24 grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-30"
         >
-          <div className="h-60 bg-gradient-to-br from-green-600 to-green-400 blur-[106px] " />
-          <div className="h-40 bg-gradient-to-r from-green-400 to-green-300 blur-[106px] " />
+          <div className="h-40 bg-gradient-to-br from-green-600 to-green-400 blur-[106px] " />
+          <div className="h-30 bg-gradient-to-r from-green-400 to-green-300 blur-[106px] " />
         </div>
         <div className="relative max-w-2xl sm:text-center md:mx-auto">
           <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
@@ -91,7 +67,7 @@ const Testimonials = () => {
                     </div>
                   </div>
                   <blockquote>
-                    <p className="mt-6 text-gray-700">{item.quote}</p>
+                    <p className="mt-6 text-gray-700">{`"${item.quote}"`}</p>
                   </blockquote>
                 </figure>
               </li>

@@ -10,7 +10,7 @@ function Arrow({}: Props) {
       height="102"
       viewBox="0 0 103 102"
       fill="none"
-      className="stroke-orange-900"
+      className="stroke-green-600"
     >
       <g>
         <path

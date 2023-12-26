@@ -1,14 +1,24 @@
 'use client';
 
 import ImagePreview from '@/components/ImagePreview';
-import Arrow from '@/components/elements/Arrow';
 import FileInput from '@/components/ui/FileInput';
-import React, { ChangeEvent, useEffect, useState } from 'react';
+import { ChangeEvent, useEffect, useState } from 'react';
+import { animated, useSpring } from 'react-spring';
 
 const ClassifyHerb = () => {
   const [image, setImage] = useState<string | null>(null);
   const [isLoading, setisLoading] = useState<boolean>(false);
   const [resultText, setResultText] = useState('');
+
+  const styles = useSpring({
+    from: { opacity: 0, translateY: '20px', rotate: '30deg' },
+    to: resultText
+      ? { opacity: 1, translateY: '0px', rotate: '0deg' }
+      : { opacity: 0, translateY: '20px', rotate: '30deg' },
+    config: {
+      duration: 200,
+    },
+  });
 
   const handleChange = async (event: ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files![0];
@@ -49,19 +59,13 @@ const ClassifyHerb = () => {
   return (
     <div className="flex justify-center items-center flex-col w-full lg:p-0 p-4 sm:mb-28 mb-0 mt-6">
       <h1 className="text-4xl md:text-6xl font-bold">Classify your herb</h1>
-      <div className="relative mt-10 z-10">
-        <div className="absolute right-8 top-10 -rotate-45">
-          <Arrow />
-        </div>
-        {resultText && (
-          <span className="text-2xl ">
-            it is a{' '}
-            <strong className="font-semibold text-green-500">
-              {resultText}
-            </strong>
-          </span>
-        )}
-      </div>
+
+      <animated.div className="relative mt-10 z-10" style={styles}>
+        <span className="text-2xl ">
+          it is a{' '}
+          <strong className="font-semibold text-green-500">{resultText}</strong>
+        </span>
+      </animated.div>
 
       <div className="max-w-6xl w-full flex gap-6 mt-10">
         <div className="mx-auto">
