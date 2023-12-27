@@ -6,7 +6,7 @@ const Footer = () => (
       <p className="text-gray-600 text-sm md:text-base ">
         Created by{' '}
         <a
-          href="https://twitter.com/bouazzayyoub"
+          href="https://twitter.com/AyyoubBouazza"
           target="_blank"
           className="hover:underline transition font-bold text-green-600"
         >
