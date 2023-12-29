@@ -16,11 +16,11 @@ const Testimonials = () => {
     },
     {
       avatar:
-        'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80',
-      name: 'Lysa stian',
-      title: 'System manger',
+        '/anonymous-man.png',
+      name: '@Creskopper',
+      title: 'Designer & Web Developer',
       quote:
-        'My business was in a dire situation. I had no idea what to do, and I felt like I was losing hope. Then I found this Startup and everything changed. It helped me create automated sales.',
+        'Herbify is the answer to my green dilemma. I no longer have to worry about mixing up these two similar-looking plants. With just a photo from my phone\'s camera, Herbify will tell me which herb is which.',
     },
   ];
 
