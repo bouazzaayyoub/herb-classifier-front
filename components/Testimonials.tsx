@@ -8,20 +8,19 @@ const Testimonials = () => {
         "Okay, Herbify saved me and my kitchen from herb identity crises! 🌿 It's like having a GPS for coriander and parsley in Moroccan dishes – no more getting lost in the herb jungle!",
     },
     {
-      avatar:
-        'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-      name: 'Karim ahmed',
-      title: 'DevOps engineer',
+      avatar: '/ussama.jpeg',
+      name: 'Oussama Abdedaime',
+      title: 'Founder of Digital Lions | Software Engineer',
       quote:
-        "My company's software now is easy to use, saves time and money, and is loved by a lot of users. One customer saved $10k over the course of 3 years and another saves 8 hours per week! Thanks to Blinder.",
+        "With this app, I can finally tell the difference between coriander (Qazbor) and parsley (Maadanous) without having to ask my mother—she'll be so impressed!",
     },
     {
       avatar:
-        'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80',
-      name: 'Lysa stian',
-      title: 'System manger',
+        '/anonymous-man.png',
+      name: '@Creskopper',
+      title: 'Designer & Web Developer',
       quote:
-        'My business was in a dire situation. I had no idea what to do, and I felt like I was losing hope. Then I found this Startup and everything changed. It helped me create automated sales.',
+        'Herbify is the answer to my green dilemma. I no longer have to worry about mixing up these two similar-looking plants. With just a photo from my phone\'s camera, Herbify will tell me which herb is which.',
     },
   ];
 
