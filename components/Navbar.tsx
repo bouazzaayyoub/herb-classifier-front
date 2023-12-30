@@ -114,7 +114,7 @@ const Navbar = () => {
                   <li key={idx}>
                     <Link
                       href={item.path}
-                      className="flex border-r border-gray-300 pr-5 space-x-2 hover:text-green-500 transition"
+                      className="flex border rounded-full p-3 md:bg-transparent  md:border-none border-r bg-gray-100 border-gray-300 pr-5 space-x-2 hover:text-green-500 transition"
                     >
                       <p className="font-medium text-base">{item.title}</p>
                     </Link>

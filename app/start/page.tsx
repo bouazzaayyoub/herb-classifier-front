@@ -60,7 +60,7 @@ const ClassifyHerb = () => {
     <div className="flex justify-center items-center flex-col w-full lg:p-0 p-4 sm:mb-28 mb-0 mt-6">
       <h1 className="text-4xl md:text-6xl font-bold">Classify your herb</h1>
 
-      <animated.div className="relative mt-10 z-10" style={styles}>
+      <animated.div className="relative mt-10 " style={styles}>
         <span className="text-2xl ">
           it is a{' '}
           <strong className="font-semibold text-green-500">{resultText}</strong>

@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Footer = () => (
   <footer className="flex custom-screen py-16 justify-between items-end md:items-center">
-    <div className="">
+    <div className="w-1/2">
       <p className="text-gray-600 text-sm md:text-base ">
         Created by{' '}
         <a
@@ -39,15 +39,15 @@ const Footer = () => (
         />
       </div>
     </div>
-    <div className="flex items-center">
+    <div className="flex items-start md:justify-center flex-col-reverse md:flex-row md:items-center">
       <Image
         src="/palestine.png"
-        className="shadow-lg rounded-full"
+        className="shadow-lg rounded-full w-10 mt-3"
         alt=""
-        height={40}
-        width={40}
+        height={50}
+        width={50}
       />
-      <span className="ms-2 font-medium text-base capitalize text-gray-700">
+      <span className="md:ms-2 font-medium text-base capitalize text-gray-700">
         #FreePalestine
       </span>
     </div>
